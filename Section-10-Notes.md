@@ -1,5 +1,6 @@
 - [ ] 10 02:15:05 | 28 | Classes & Object-oriented Programming (OOP)
 	- [ ] 239 01 Module Introduction | 01:55
+	- [ ] 240 02 What is "Object-oriented Programming" (OOP)? | 03:17
 	  - A way of writing/structuring/thinking-about my code
 	  - Online shop
 	    - ProductList
@@ -7,8 +8,9 @@
 	      - Object holds rendering and fetching logic
 	     - Product
 	     - Shopping Cart
-	- [ ] 240 02 What is "Object-oriented Programming" (OOP)? | 03:17
 	- [ ] 241 03 Getting Started with OOP Code | 12:10
+	  - 
+	  
 	- [ ] 242 04 Defining & Using a First Class | 07:17
 	- [ ] 243 05 Working with Constructor Methods | 04:51
 	- [ ] 244 06 Fields vs Properties | 02:19
