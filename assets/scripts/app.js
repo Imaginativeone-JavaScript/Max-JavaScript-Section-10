@@ -1,5 +1,22 @@
-const productList = {
-	products: [
+class Product {
+	// title = "DEFAULT"; // Optional definitions of fields
+	// imageUrl;
+	// description;
+	// price;
+
+	constructor(title, image, desc, price) {
+		this.title = title;
+		this.imageUrl = image;
+		this.description = desc;
+		this.price = price;
+	}
+}
+
+console.log("Product", new Product());
+
+class ProductList {
+	products = [
+		new Product("A Title", "assets/images/pillow.jpg", "A Description", 19.99),
 		{
 			title: "A Pillow",
 			imageUrl: "assets/images/pillow.jpg",
@@ -12,11 +29,11 @@ const productList = {
 			price: "89.99",
 			description: "A carpet which you might like - or not",
 		},
-	],
+	];
+}
 
+const productList = {
 	render() {
-		console.log(this.products);
-
 		const renderHook = document.getElementById("app");
 		const prodList = document.createElement("ul");
 
