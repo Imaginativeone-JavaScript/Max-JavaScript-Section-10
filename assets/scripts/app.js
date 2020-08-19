@@ -2,21 +2,21 @@ const productList = {
 	products: [
 		{
 			title: "A Pillow",
-			imageUrl:
-				"https://www.maxpixel.net/Sleep-Bedtime-Pillow-Bedroom-Dream-Comfortable-1738023",
+			imageUrl: "assets/images/pillow.jpg",
 			price: "19.99",
 			description: "A soft pillow",
 		},
 		{
 			title: "A Carpet",
-			imageUrl:
-				"https://commons.wikimedia.org/wiki/File:Onappookkalam_Pookkalam_Flower_carpet_Nithyananda_Ashram_Kanhangad_2019.jpg",
+			imageUrl: "assets/images/carpet.jpg",
 			price: "89.99",
 			description: "A carpet which you might like - or not",
 		},
 	],
 
 	render() {
+		console.log(this.products);
+
 		const renderHook = document.getElementById("app");
 		const prodList = document.createElement("ul");
 
@@ -26,11 +26,21 @@ const productList = {
 			const prodEl = document.createElement("li");
 			prodEl.className = "product-item";
 			prodEl.innerHTML = `
-      
+        <div>
+          <img src="${prod.imageUrl}" alt="${prod.title}">
+          <div class="product=item__content">
+            <h2>${prod.title}</h2>
+            <h3>\$${prod.price}</h3>
+            <p>${prod.description}</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
       `;
 			prodList.append(prodEl);
 		}
 
-		renderHook.append();
+		renderHook.append(prodList);
 	},
 };
+
+productList.render();
