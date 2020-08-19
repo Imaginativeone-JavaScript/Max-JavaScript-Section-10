@@ -9,7 +9,9 @@
 	     - Product
 	     - Shopping Cart
 	- [ ] 241 03 Getting Started with OOP Code | 12:10
-	  - 
+	  - We start with hard-coded objects
+	  - Need a standalone object
+	  - Property vs Field
 	  
 	- [ ] 242 04 Defining & Using a First Class | 07:17
 	- [ ] 243 05 Working with Constructor Methods | 04:51
