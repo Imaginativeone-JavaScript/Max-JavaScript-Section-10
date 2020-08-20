@@ -21,6 +21,9 @@ class ElementAttribute {
 	}
 }
 class Component {
+	constructor(renderHookId) {
+		this.hookId = renderHookId;
+	}
 	createRootElement(tag, cssClasses, attributes) {
 		const rootElement = documentCreateElement(tag);
 
@@ -33,6 +36,7 @@ class Component {
 				rootElement.setAttribute(attr.name, attr.value);
 			}
 		}
+		document.getElementById(this.hookId);
 	}
 }
 
