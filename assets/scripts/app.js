@@ -41,7 +41,7 @@ class ProductItem {
 		`;
 
 		const addCartButton = prodEl.querySelector("button");
-		addCartButton.addEventListener("click", this.addToCart);
+		addCartButton.addEventListener("click", this.addToCart.bind(this));
 		return prodEl;
 	}
 }
