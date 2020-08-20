@@ -26,6 +26,7 @@
 	  - More overhead initially, but easy "object duplication" thereafter
 	- [ ] 251 13 Getters & Setters | 05:43
 	- [ ] 252 14 Introducing Inheritance | 02:34
+	  - Will this be ignored?
 	- [ ] 253 15 Implementing Inheritance | 11:50
 	- [ ] 254 16 Using Inheritance Everywhere | 06:51
 	- [ ] 255 17 Overriding Methods and the super() Constructor | 06:00
