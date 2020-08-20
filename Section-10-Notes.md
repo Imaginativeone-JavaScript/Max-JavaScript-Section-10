@@ -19,7 +19,7 @@
 	- [ ] 246 08 Binding Class Methods & Working with "this" | 04:57
 	- [ ] 247 09 Adding a Cart and Shop Class | 04:37
 	- [ ] 248 10 Communicating Can Be Challenging! | 03:54
-	- [ ] 249 11 Static Methods & Properties | 07:51
+	- [ ] 249 11 Static Methods & Properties (vs instance) | 07:51
 	  - static field/property/method is only accessible within the class itself
 	- [ ] 250 12 First Summary & Classes vs Object Literals | 04:06
 	- [ ] 251 13 Getters & Setters | 05:43
