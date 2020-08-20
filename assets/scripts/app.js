@@ -1,9 +1,8 @@
-class Product {
-	// title = "DEFAULT"; // Optional definitions of fields
-	// imageUrl;
-	// description;
-	// price;
+/*************************************** 
+	Do all the rendering in the Component (Parent) Class
+*/
 
+class Product {
 	constructor(title, image, desc, price) {
 		this.title = title;
 		this.imageUrl = image;
@@ -12,18 +11,21 @@ class Product {
 	}
 }
 
-// console.log("Product", new Product()); // for viewing the fields (at first)
-
 class ElementAttribute {
 	constructor(attrName, attrValue) {
 		this.name = attrName;
 		this.value = attrValue;
 	}
 }
+
 class Component {
 	constructor(renderHookId) {
 		this.hookId = renderHookId;
+		this.render();
 	}
+
+	render() {} // Empty method, for readability
+
 	createRootElement(tag, cssClasses, attributes) {
 		const rootElement = document.createElement(tag);
 
