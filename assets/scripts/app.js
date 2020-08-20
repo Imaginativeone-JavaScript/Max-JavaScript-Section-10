@@ -12,7 +12,21 @@ class Product {
 	}
 }
 
-console.log("Product", new Product()); // for viewing the fields (at first)
+// console.log("Product", new Product()); // for viewing the fields (at first)
+
+class ShoppingCart {
+	items = [];
+
+	render() {
+		const cartEl = document.createElement("section");
+		cartEl.innerHTML = `
+			<h2>Total \$${0}</h2>
+			<button>Order Now!</button>
+		`;
+		cartEl.className = "cart"; // given by instructor
+		return cartEl;
+	}
+}
 
 class ProductItem {
 	// class "Product" lays out the template. This one renders.
@@ -66,7 +80,6 @@ class ProductList {
 	constructor() {}
 
 	render() {
-		const renderHook = document.getElementById("app");
 		const prodList = document.createElement("ul");
 
 		prodList.className = "product-list";
@@ -76,10 +89,24 @@ class ProductList {
 			const prodEl = productItem.render();
 			prodList.append(prodEl);
 		}
-
-		renderHook.append(prodList);
+		return prodList;
 	}
 }
 
-const productList = new ProductList();
-productList.render();
+class Shop {
+	render() {
+		const renderHook = document.getElementById("app");
+
+		const cart = new ShoppingCart();
+		const cartEl = cart.render();
+
+		const productList = new ProductList();
+		const prodListEl = productList.render();
+
+		renderHook.append(cartEl);
+		renderHook.append(prodListEl);
+	}
+}
+
+const shop = new Shop();
+shop.render();
