@@ -14,7 +14,15 @@ class Product {
 
 // console.log("Product", new Product()); // for viewing the fields (at first)
 
-class Component {}
+class Component {
+	createRootElement(tag, cssClasses, attributes) {
+		const rootElement = documentCreateElement(tag);
+
+		if (cssClasses) {
+			rootElement.className = cssClasses;
+		}
+	}
+}
 
 class ShoppingCart {
 	items = [];
