@@ -12,7 +12,6 @@
 	  - We start with hard-coded objects
 	  - Need a standalone object
 	  - Property vs Field
-	  
 	- [ ] 242 04 Defining & Using a First Class | 07:17
 	- [ ] 243 05 Working with Constructor Methods | 04:51
 	- [ ] 244 06 Fields vs Properties | 02:19
@@ -22,6 +21,9 @@
 	- [ ] 248 10 Communicating Can Be Challenging! | 03:54
 	- [ ] 249 11 Static Methods & Properties | 07:51
 	- [ ] 250 12 First Summary & Classes vs Object Literals | 04:06
+	  - The relationship between Classes and Objects
+	  - Object Literals are not obsolete
+	  - More overhead initially, but easy "object duplication" thereafter
 	- [ ] 251 13 Getters & Setters | 05:43
 	- [ ] 252 14 Introducing Inheritance | 02:34
 	- [ ] 253 15 Implementing Inheritance | 11:50
@@ -31,12 +33,8 @@
 	- [ ] 257 19 Different Ways of Adding Methods | 05:51
 	- [ ] 258 20 Private Properties | 07:24
 	- [ ] 259 21 "Pseudo-Private" Properties | 00:32
-	- [ ] *** ** Time to Practice: Classes & OOP
-	- [ ] *** ** 1 question
 	- [ ] 260 22 The "instanceof" Operator | 04:30
 	- [ ] 261 23 Built-in Classes | 01:09
 	- [ ] 262 24 Understanding Object Descriptors | 07:35
-	- [ ] *** ** Classes
-	- [ ] *** ** 5 questions
 	- [ ] 263 25 Wrap Up | 01:51
 	- [ ] 264 26 Useful Resources & Links | 00:09
