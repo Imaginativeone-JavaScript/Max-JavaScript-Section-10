@@ -17,6 +17,11 @@ class Product {
 class ShoppingCart {
 	items = [];
 
+	addProduct(product) {
+		this.items.push(product);
+		this.totalOutput = `<h2>Total \$${1}</h2>`;
+	}
+
 	render() {
 		const cartEl = document.createElement("section");
 		cartEl.innerHTML = `
@@ -24,6 +29,7 @@ class ShoppingCart {
 			<button>Order Now!</button>
 		`;
 		cartEl.className = "cart"; // given by instructor
+		this.totalOutput = cartEl.querySelector("h2"); // dynamically adding a new property
 		return cartEl;
 	}
 }
@@ -110,3 +116,7 @@ class Shop {
 
 const shop = new Shop();
 shop.render();
+
+class App {
+	static init() {}
+}
