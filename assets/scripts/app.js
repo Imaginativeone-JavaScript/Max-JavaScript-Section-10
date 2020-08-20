@@ -17,6 +17,13 @@ class Product {
 class ShoppingCart {
 	items = [];
 
+	set cartItems(value) {
+		this.items = value;
+		this.totalOutput.innerHTML = `<h2>Total \$${this.totalAmount.toFixed(
+			2
+		)}</h2>`;
+	}
+
 	// Getters and Setters
 	// get totalAmount() {
 	// 	const sum = this.items.reduce((previousValue, currentItem) => {
@@ -33,8 +40,10 @@ class ShoppingCart {
 	}
 
 	addProduct(product) {
-		this.items.push(product);
-		this.totalOutput.innerHTML = `<h2>Total \$${this.totalAmount}</h2>`;
+		// this.items.push(product);
+		const updatedItems = [...this.items];
+		updatedItems.push(product);
+		this.cartItems = updatedItems;
 	}
 
 	render() {
@@ -88,13 +97,13 @@ class ProductList {
 		{
 			title: "A Pillow",
 			imageUrl: "assets/images/pillow.jpg",
-			price: "19.99",
+			price: 29.99,
 			description: "A soft pillow",
 		},
 		{
 			title: "A Carpet",
 			imageUrl: "assets/images/carpet.jpg",
-			price: "89.99",
+			price: 89.99,
 			description: "A carpet which you might like - or not",
 		},
 	];
