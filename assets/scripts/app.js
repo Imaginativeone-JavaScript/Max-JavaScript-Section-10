@@ -17,8 +17,6 @@ class Product {
 class ShoppingCart {
 	items = [];
 
-	// small change
-
 	set cartItems(value) {
 		this.items = value;
 		this.totalOutput.innerHTML = `<h2>Total \$${this.totalAmount.toFixed(
