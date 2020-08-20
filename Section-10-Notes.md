@@ -1,3 +1,41 @@
-<!-- prettier ignore -->
-
-- [ ] 10 02:15:05 | 28 | Classes & Object-oriented Programming (OOP) - [ ] 239 01 Module Introduction | 01:55 - [ ] 240 02 What is "Object-oriented Programming" (OOP)? | 03:17 - A way of writing/structuring/thinking-about my code - Online shop - ProductList - Renders a list of products which were fetched from a server (database) - Object holds rendering and fetching logic - Product - Shopping Cart - [ ] 241 03 Getting Started with OOP Code | 12:10 - We start with hard-coded objects - Need a standalone object - Property vs Field - [ ] 242 04 Defining & Using a First Class | 07:17 - [ ] 243 05 Working with Constructor Methods | 04:51 - [ ] 244 06 Fields vs Properties | 02:19 - [ ] 245 07 Using & "Connecting" Multiple Classes | 09:06 - [ ] 246 08 Binding Class Methods & Working with "this" | 04:57 - [ ] 247 09 Adding a Cart and Shop Class | 04:37 - [ ] 248 10 Communicating Can Be Challenging! | 03:54 - [ ] 249 11 Static Methods & Properties | 07:51 - [ ] 250 12 First Summary & Classes vs Object Literals | 04:06 - The relationship between Classes and Objects - Object Literals are not obsolete - More overhead initially, but easy "object duplication" thereafter - [ ] 251 13 Getters & Setters | 05:43 - [ ] 252 14 Introducing Inheritance | 02:34 - [ ] 253 15 Implementing Inheritance | 11:50 - [ ] 254 16 Using Inheritance Everywhere | 06:51 - [ ] 255 17 Overriding Methods and the super() Constructor | 06:00 - [ ] 265 18 super() Constructor Execution, Order & "this" | 06:46 - [ ] 257 19 Different Ways of Adding Methods | 05:51 - [ ] 258 20 Private Properties | 07:24 - [ ] 259 21 "Pseudo-Private" Properties | 00:32 - [ ] 260 22 The "instanceof" Operator | 04:30 - [ ] 261 23 Built-in Classes | 01:09 - [ ] 262 24 Understanding Object Descriptors | 07:35 - [ ] 263 25 Wrap Up | 01:51 - [ ] 264 26 Useful Resources & Links | 00:09
+- [ ] 10 02:15:05 | 28 | Classes & Object-oriented Programming (OOP)
+	- [ ] 239 01 Module Introduction | 01:55
+	- [ ] 240 02 What is "Object-oriented Programming" (OOP)? | 03:17
+	  - A way of writing/structuring/thinking-about my code
+	  - Online shop
+	    - ProductList
+	      - Renders a list of products which were fetched from a server (database)
+	      - Object holds rendering and fetching logic
+	     - Product
+	     - Shopping Cart
+	- [ ] 241 03 Getting Started with OOP Code | 12:10
+	  - We start with hard-coded objects
+	  - Need a standalone object
+	  - Property vs Field
+	- [ ] 242 04 Defining & Using a First Class | 07:17
+	- [ ] 243 05 Working with Constructor Methods | 04:51
+	- [ ] 244 06 Fields vs Properties | 02:19
+	- [ ] 245 07 Using & "Connecting" Multiple Classes | 09:06
+	- [ ] 246 08 Binding Class Methods & Working with "this" | 04:57
+	- [ ] 247 09 Adding a Cart and Shop Class | 04:37
+	- [ ] 248 10 Communicating Can Be Challenging! | 03:54
+	- [ ] 249 11 Static Methods & Properties | 07:51
+	- [ ] 250 12 First Summary & Classes vs Object Literals | 04:06
+	  - The relationship between Classes and Objects
+	  - Object Literals are not obsolete
+	  - More overhead initially, but easy "object duplication" thereafter
+	- [ ] 251 13 Getters & Setters | 05:43
+	- [ ] 252 14 Introducing Inheritance | 02:34
+	  - Will this be ignored?
+	- [ ] 253 15 Implementing Inheritance | 11:50
+	- [ ] 254 16 Using Inheritance Everywhere | 06:51
+	- [ ] 255 17 Overriding Methods and the super() Constructor | 06:00
+	- [ ] 265 18 super() Constructor Execution, Order & "this" | 06:46
+	- [ ] 257 19 Different Ways of Adding Methods | 05:51
+	- [ ] 258 20 Private Properties | 07:24
+	- [ ] 259 21 "Pseudo-Private" Properties | 00:32
+	- [ ] 260 22 The "instanceof" Operator | 04:30
+	- [ ] 261 23 Built-in Classes | 01:09
+	- [ ] 262 24 Understanding Object Descriptors | 07:35
+	- [ ] 263 25 Wrap Up | 01:51
+	- [ ] 264 26 Useful Resources & Links | 00:09
