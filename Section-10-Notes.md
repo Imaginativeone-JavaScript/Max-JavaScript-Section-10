@@ -22,8 +22,12 @@
 	- [ ] 249 11 Static Methods & Properties (vs instance) | 07:51
 	  - static field/property/method is only accessible within the class itself
 	- [ ] 250 12 First Summary & Classes vs Object Literals | 04:06
+	  - The relationship between Classes and Objects
+	  - Object Literals are not obsolete
+	  - More overhead initially, but easy "object duplication" thereafter
 	- [ ] 251 13 Getters & Setters | 05:43
 	- [ ] 252 14 Introducing Inheritance | 02:34
+	  - Will this be ignored?
 	- [ ] 253 15 Implementing Inheritance | 11:50
 	- [ ] 254 16 Using Inheritance Everywhere | 06:51
 	- [ ] 255 17 Overriding Methods and the super() Constructor | 06:00
@@ -31,12 +35,8 @@
 	- [ ] 257 19 Different Ways of Adding Methods | 05:51
 	- [ ] 258 20 Private Properties | 07:24
 	- [ ] 259 21 "Pseudo-Private" Properties | 00:32
-	- [ ] *** ** Time to Practice: Classes & OOP
-	- [ ] *** ** 1 question
 	- [ ] 260 22 The "instanceof" Operator | 04:30
 	- [ ] 261 23 Built-in Classes | 01:09
 	- [ ] 262 24 Understanding Object Descriptors | 07:35
-	- [ ] *** ** Classes
-	- [ ] *** ** 5 questions
 	- [ ] 263 25 Wrap Up | 01:51
 	- [ ] 264 26 Useful Resources & Links | 00:09
