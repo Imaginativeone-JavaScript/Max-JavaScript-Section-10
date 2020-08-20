@@ -89,9 +89,10 @@ class ShoppingCart extends Component {
 	}
 }
 
-class ProductItem {
+class ProductItem extends Component {
 	// class "Product" lays out the template. This one renders.
 	constructor(product) {
+		super();
 		this.product = product;
 	}
 
