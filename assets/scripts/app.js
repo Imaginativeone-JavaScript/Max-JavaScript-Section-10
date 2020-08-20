@@ -19,7 +19,7 @@ class ShoppingCart {
 
 	addProduct(product) {
 		this.items.push(product);
-		this.totalOutput = `<h2>Total \$${1}</h2>`;
+		this.totalOutput.innerHTML = `<h2>Total \$${1}</h2>`;
 	}
 
 	render() {
@@ -43,6 +43,7 @@ class ProductItem {
 	addToCart() {
 		console.log("Adding product to cart...");
 		console.log(this.product);
+		App.addProductToCart(this.product);
 	}
 
 	render() {
@@ -103,8 +104,14 @@ class Shop {
 	render() {
 		const renderHook = document.getElementById("app");
 
-		const cart = new ShoppingCart();
-		const cartEl = cart.render();
+		console.log(this);
+
+		// const cart = new ShoppingCart();
+		this.cart = new ShoppingCart();
+
+		console.log(this.cart);
+
+		const cartEl = this.cart.render(); // update all the cart(s)
 
 		const productList = new ProductList();
 		const prodListEl = productList.render();
@@ -114,9 +121,23 @@ class Shop {
 	}
 }
 
-const shop = new Shop();
-shop.render();
-
 class App {
-	static init() {}
+	static cart; // Explicit declaration for readability
+
+	static init() {
+		const shop = new Shop();
+		shop.render();
+
+		// "this" refers to the CLASS ITSELF, not to an instance of the class
+
+		this.cart = shop.cart; // The shop, which is a static (object) property of App, assigns its shop.cart property
+		// to the App.cart property. This assignment serves to "link" this particular Shop with the static App.
+	}
+
+	static addProductToCart(product) {
+		this.cart.addProduct(product); // Proxy method, can be called to access Shop methods
+	}
 }
+
+App.init();
+// Take a look at the ShoppingCart addProduct method
