@@ -14,6 +14,8 @@ class Product {
 
 // console.log("Product", new Product()); // for viewing the fields (at first)
 
+class Component {}
+
 class ShoppingCart {
 	items = [];
 
