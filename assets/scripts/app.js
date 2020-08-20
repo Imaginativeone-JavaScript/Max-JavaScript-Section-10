@@ -25,7 +25,7 @@ class Component {
 		this.hookId = renderHookId;
 	}
 	createRootElement(tag, cssClasses, attributes) {
-		const rootElement = documentCreateElement(tag);
+		const rootElement = document.createElement(tag);
 
 		if (cssClasses) {
 			rootElement.className = cssClasses;
@@ -41,8 +41,12 @@ class Component {
 	}
 }
 
-class ShoppingCart {
+class ShoppingCart extends Component {
 	items = [];
+
+	constructor(renderHookId) {
+		super(renderHookId);
+	}
 
 	set cartItems(value) {
 		this.items = value;
@@ -74,12 +78,12 @@ class ShoppingCart {
 	}
 
 	render() {
-		const cartEl = document.createElement("section");
+		const cartEl = this.createRootElement("section", "cart");
 		cartEl.innerHTML = `
 			<h2>Total \$${0}</h2>
 			<button>Order Now!</button>
 		`;
-		cartEl.className = "cart"; // given by instructor
+		// cartEl.className = "cart"; // given by instructor
 		this.totalOutput = cartEl.querySelector("h2"); // dynamically adding a new property
 		return cartEl;
 	}
@@ -158,16 +162,14 @@ class Shop {
 		console.log(this);
 
 		// const cart = new ShoppingCart();
-		this.cart = new ShoppingCart();
+		this.cart = new ShoppingCart("app");
+		this.cart.render();
 
-		console.log(this.cart);
-
-		const cartEl = this.cart.render(); // update all the cart(s)
+		// const cartEl = this.cart.render(); // update all the cart(s)
 
 		const productList = new ProductList();
 		const prodListEl = productList.render();
 
-		renderHook.append(cartEl);
 		renderHook.append(prodListEl);
 	}
 }
