@@ -14,7 +14,12 @@ class Product {
 
 // console.log("Product", new Product()); // for viewing the fields (at first)
 
-class ElementAttribute {}
+class ElementAttribute {
+	constructor(attrName, attrValue) {
+		this.name = attrName;
+		this.value = attrValue;
+	}
+}
 class Component {
 	createRootElement(tag, cssClasses, attributes) {
 		const rootElement = documentCreateElement(tag);
